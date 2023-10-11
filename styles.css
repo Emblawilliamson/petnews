@@ -1,0 +1,129 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "sidebar1 main sidebar2"
+    "footer footer footer";
+  grid-template-columns: 20% 1fr 15%;
+  grid-template-rows: 100px 70px 1fr 95px;
+  gap: 3px;
+  height: 100vh;
+  margin: 0;
+  background: #3c626f;
+}
+
+#header {
+  grid-area: header;
+  display: grid;
+  justify-content: center;
+  background: #2f4858;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+}
+
+#navbar {
+  grid-area: nav;
+  display: grid;
+  justify-content: flex-end;
+  background: #2f4858;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 100px;
+  align-self: center;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #4d7c83;
+}
+
+#sidebar1 {
+  grid-area: sidebar1;
+  display: grid;
+  background: #2f4858;
+  grid-template-rows: repeat(10, 1fr);
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3c626f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d7c83;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #639795;
+}
+h1 {
+  display: grid;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+p:hover {
+  background: #2f4858;
+  text-decoration: underline;
+  color: white;
+}
+p {
+  display: grid;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#main {
+  grid-area: main;
+  display: grid;
+  background: #2f4858;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#breaking-news {
+  font-size: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: grid;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+#sidebar2 {
+  grid-area: sidebar2;
+  display: grid;
+}
+#footer {
+  grid-area: footer;
+  display: grid;
+  justify-content: center;
+  background: #2f4858;
+}
