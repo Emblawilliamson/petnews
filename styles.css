@@ -160,3 +160,17 @@ footer {
   align-items: center;
   justify-content: space-evenly;
 }
+
+.fa-facebook:hover {
+  transform: scale(1.9);
+}
+
+.fa-twitter:hover {
+  transform: scale(1.9);
+}
+.fa-instagram:hover {
+  transform: scale(1.9);
+}
+.fa-linkedin:hover {
+  transform: scale(1.9);
+}
